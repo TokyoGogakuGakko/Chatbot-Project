@@ -1,7 +1,6 @@
 <div class="chat-area flex-1 flex flex-col">
     <div class="flex-3">
-        <h2 class="text-xl py-1 mb-8 border-b-2 border-gray-200">Chatting with <b>Mercedes
-                Yemelyan</b></h2>
+        <h2 class="text-xl py-1 mb-8 border-b-2 border-gray-200">Lets Practise Interview with <b>AI Smart ChatBot</b></h2>
     </div>
     @if(!is_null($selectedJobId))
         <div class="messages flex-1 overflow-auto">
