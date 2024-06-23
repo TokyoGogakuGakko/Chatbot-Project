@@ -1,5 +1,5 @@
 <x-layouts.app>
-    <div class="flex h-full">
+    <div class="flex min-h-screen">
 {{--        <div class="hidden xl:block sm:flex-2 w-64 bg-gray-200">--}}
 {{--            <div class="user-profile text-center">--}}
 {{--                <div class="w-32 h-32 rounded-full m-auto mt-16 border-2 border-white bg-white shadow-lg">--}}
@@ -114,7 +114,7 @@
 {{--                    </div>--}}
 {{--                </div>--}}
 
-                <div class="main flex-1 flex flex-col pt-5">
+                <div class="main flex-1 flex flex-col min-h-screen">
                     <div class="hidden lg:block heading flex-2">
                         <h1 class="text-3xl text-gray-700 mb-4">Interview Practice</h1>
                     </div>
