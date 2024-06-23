@@ -5,7 +5,7 @@
                placeholder="Search">
     </div>
 
-    <div class="flex-1 h-full overflow-auto px-2">
-        <x-job-list :selected-job-id="$selectedJobId" />
+    <div class="flex-1 overflow-auto px-2">
+        <x-conversations :conversations="$conversations" :selected-conversation-id="$selectedConversationId"  />
     </div>
 </div>

@@ -6,9 +6,15 @@
     <title>Chat</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('styles')
+    <style>
+        [x-cloak]{
+            display: none;
+        }
+    </style>
 </head>
 <body>
-<div class="w-full h-screen">
+<x-toast />
+<div class="w-full min-h-screen">
     {{ $slot }}
 </div>
 </body>

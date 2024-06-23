@@ -1,16 +1,16 @@
 <?php
 
+use App\Http\Controllers\API\ChatController;
+use App\Models\Conversation;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/chat', function () {
-    $selectedJobId = request()->get('jobId');
+Route::post('/chat/start', [ChatController::class, 'startInterview'])->name('chat.start');
 
-    return view('chat', compact('selectedJobId'));
-})->name('chat');
+Route::get('/chat', [ChatController::class, 'index'])->name('chat');
 
-Route::post('/chat', function (){
-})->name('chat.store');
+Route::post('/chat', [ChatController::class, 'store'])->name('chat.store');
+
