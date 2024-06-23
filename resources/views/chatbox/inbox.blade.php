@@ -1,6 +1,6 @@
 <div x-data="chatbox" class="relative chat-area flex-1 flex flex-col">
     <div class="flex-3">
-        <h2 class="text-xl py-1 mb-8 border-b-2 border-gray-200">Chatting with <b>Bot</b></h2>
+        <h2 class="text-xl py-1 mb-8 border-b-2 border-gray-200">Lets Practise Interview with <b>AI Smart ChatBot</b></h2>
     </div>
     @if(!is_null($selectedConversationId))
         <div x-show="!(messages?.length > 0)"
