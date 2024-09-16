@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('conversations', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->nullable();
 //            Temporary column for the time being
 //            It will be removed in the future
 //            In the future, context will be read from the job table
-            $table->text('context');
+            $table->text('context')->nullable();
 
 //            $table->foreignId('jobId')->nullable();
             $table->timestamps();
